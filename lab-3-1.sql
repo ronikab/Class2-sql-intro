@@ -1,6 +1,6 @@
 -- How many teams played in the league in each year?
 
-select year, count(name) from teams order by year;
+select year, count(name) from teams group by year order by year;
 
 -- Expected result: 150 rows, ending with
 --

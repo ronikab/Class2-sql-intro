@@ -1,6 +1,6 @@
 -- For each team, what is the average number of wins per season, in the 21st century?
 
-select name, average(wins) from teams where year>1999 group by name;
+select name, avg(wins) from teams where year>=2001 group by name;
 
 -- Expected result:
 --

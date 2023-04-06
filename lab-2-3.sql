@@ -2,6 +2,8 @@
 
 select max(year), name from teams where park='U.S. Cellular Field' group by name;
 
+select year, name from teams where park='U.S. Cellular Field' ORDER BY year DESC Limit 1;
+
 -- Expected result:
 --
 -- +------+-------------------+

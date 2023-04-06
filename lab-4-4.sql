@@ -1,13 +1,13 @@
 -- Who was the leading home run hitter for each team in 2019?
 
-select name as team_name, first_name, last_name, home_runs
+select name as team_name, first_name, last_name, max(home_runs)
 from players a
 inner join stats b on a.id=b.player_id
 inner join teams c on b.team_id=c.id
 where year=2019
--- group by first_name, last_name
-order by sum(home_runs) DESC
--- limit 1
+group by team_name
+order by team_name, home_runs DESC
+limit 100
 ;
 
 -- Expected result:

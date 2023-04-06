@@ -5,6 +5,7 @@
 -- WHERE column1 = expression1
 -- AND column2 = expression2
 
+--ronika:
 -- select id from teams where name='Chicago Cubs' and year=2020; --2931
 
 select first_name, last_name
